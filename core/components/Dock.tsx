@@ -16,10 +16,11 @@ import { useIsMobile } from '@core/hooks/useIsMobile';
 import Logo from './Logo';
 
 enum NAV {
-  INDEX = 'Index',
-  ARTICLES = 'Articles',
-  CMD = 'Cmd',
-  ASK = 'Ask',
+  INDEX = '首页',
+  /* ARTICLES = '资讯', */
+  /* CMD = '命令', */
+  /* ASK = '提问', */
+  AI = 'AI中控台',
 }
 
 const Search = dynamic(() => import('@core/components/Search'));
@@ -70,6 +71,9 @@ const Dock = () => {
     },
     [NAV.ASK]: () => {
       setIsAIModeOpen(true);
+    },
+    [NAV.AI]: () => {
+      window.open('https://web.app.visionlinkmedia.cn/sltv/HB/2025/JSCNAIPlatform/index.html#/', '_blank');
     },
   };
 
