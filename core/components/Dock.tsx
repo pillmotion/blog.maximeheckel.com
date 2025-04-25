@@ -11,13 +11,10 @@ import dynamic from 'next/dynamic';
 import { useRouter } from 'next/router';
 import React, { useCallback, useState } from 'react';
 
-import { useIsMobile } from '@core/hooks/useIsMobile';
-
-import Logo from './Logo';
+import Image from 'next/image';
 
 enum NAV {
   INDEX = '首页',
-  ARTICLES = '资讯',
   CMD = '命令',
   ASK = '提问',
   AI = 'AI中控台',
@@ -34,7 +31,6 @@ const Dock = () => {
   const isHomePage = router.pathname === '/';
 
   const shouldReduceMotion = useReducedMotion();
-  const isMobile = useIsMobile();
 
   useKeyboardShortcut('ctrl+k|meta+k', () => setIsSearchOpen(true));
 
@@ -51,19 +47,6 @@ const Dock = () => {
         });
       } else {
         router.push('/');
-      }
-    },
-    [NAV.ARTICLES]: (event: React.MouseEvent) => {
-      event.preventDefault();
-      event.stopPropagation();
-
-      if (isHomePage) {
-        document.getElementById('articles')?.scrollIntoView({
-          behavior: shouldReduceMotion || isMobile ? 'auto' : 'smooth',
-          block: 'start',
-        });
-      } else {
-        router.push('/#articles');
       }
     },
     [NAV.CMD]: () => {
@@ -157,7 +140,7 @@ const Dock = () => {
               marginBottom: 1,
             }}
           >
-            <Logo alt="Logo" size={24} />
+            <Image src="/static/favicons/logo-favicon.png" alt="Logo" width={24} height={24} />
             <Box
               css={{
                 width: 1,

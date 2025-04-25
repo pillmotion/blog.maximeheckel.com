@@ -31,16 +31,16 @@ interface AIPromtResultCardProps {
 const SAMPLE_QUESTIONS = [
   // 'React Three Fiber',
   // 'Framer Motion',
-  'Use of shader in R3F',
-  'Code: staggered animations',
-  "Example on how to use Framer Motion's LayoutGroup",
-  'Show me how to compose CSS variables',
-  "Tell me about Maxime's first Three.js project",
-  'What is the difference between varyings and uniforms?',
-  'How to build a refraction shader?',
-  "What's the difference between a vertex shader and a fragment shader?",
-  'How did Maxime manage to store his Apple Watch health data?',
-  "What's a great use case for render targets?",
+  '多模态内容生成如何实现？用单一模型还是多模型协作？',
+  '版权保护采用哪些技术（如区块链）？',
+  "二次创作如何避免侵权？有无合规检测？",
+  '盈利模式是订阅、付费还是分成？',
+  "如何吸引品牌方入驻？有无精准匹配？",
+  '如何保障创作者持续收益？分成机制是否透明？',
+  'AI会否导致作品同质化？如何保护原创性？',
+  "人机协作的边界如何定义？是否削弱手工价值？",
+  '如何促进跨文化内容融合（多语言/符号生成）？',
+  "全球化中如何应对地区合规差异（数据隐私、文化禁忌）？",
 ];
 
 // eslint-disable-next-line react/display-name
@@ -196,8 +196,7 @@ const AIPromptResultCard = forwardRef(
                   }}
                 >
                   <Text as="p" size="2">
-                    Ask anything about my blog posts, a topic, or projects by
-                    typing your question or selecting one of the examples below.
+                    通过输入您的问题或选择下面的一个示例来询问有关技术、艺术或商业的任何问题。我将根据您的问题提供最相关的答案。
                   </Text>
                   <Flex wrap="wrap" gap="3">
                     {SAMPLE_QUESTIONS.map((question) => (
@@ -222,26 +221,9 @@ const AIPromptResultCard = forwardRef(
                     ))}
                   </Flex>
                   <Text as="p" size="2">
-                    Results are sadly not guaranteed to be 100% accurate but
-                    I&apos;ll work on improving the quality of the answers as I
-                    learn more about the underlying technologies. If you want to
-                    learn more about how I build it you can read my blog post
-                    titled{' '}
-                    <Link
-                      href="/posts/building-magical-ai-powered-semantic-search"
-                      legacyBehavior
-                      passHref
-                    >
-                      <Anchor>
-                        Building a magical AI-powered semantic search from
-                        scratch
-                      </Anchor>
-                    </Link>{' '}
-                    where I go through all the implementation details.
+                    结果并不保证100%准确，但我正在努力提高答案的质量，内容仅供参考，请仔细甄别。
                     <br />
-                    <br />
-                    Have fun!
-                    <br />– Maxime
+                    <br />功能即将上线，敬请期待！
                   </Text>
                 </Flex>
               ) : null}

@@ -104,7 +104,7 @@ const Search = (props: Props) => {
       const data = await response.json();
       setResults(data);
       setStatus('done');
-    } catch (error) {}
+    } catch (error) { }
   };
 
   const queryCompletionSemanticSearch = async (query: string) => {
@@ -179,8 +179,8 @@ const Search = (props: Props) => {
 
     const form = event?.currentTarget
       .elements as typeof event.currentTarget.elements & {
-      aisearch: { value: string };
-    };
+        aisearch: { value: string };
+      };
 
     if (!AIMode || form.aisearch.value === '') return;
 
@@ -249,13 +249,13 @@ const Search = (props: Props) => {
                 style={
                   AIMode
                     ? {
-                        borderBottomLeftRadius: 'var(--border-radius-2)',
-                        borderBottomRightRadius: 'var(--border-radius-2)',
-                        transition: 'all 0.2s ease-in-out',
+                      borderBottomLeftRadius: 'var(--border-radius-2)',
+                      borderBottomRightRadius: 'var(--border-radius-2)',
+                      transition: 'all 0.2s ease-in-out',
 
-                        transform: `scale(${status === 'loading' ? 0.95 : 1})`,
-                        opacity: status === 'loading' ? 0.8 : 1,
-                      }
+                      transform: `scale(${status === 'loading' ? 0.95 : 1})`,
+                      opacity: status === 'loading' ? 0.8 : 1,
+                    }
                     : {}
                 }
               >
@@ -267,10 +267,10 @@ const Search = (props: Props) => {
                       <S.SearchInput
                         autoComplete="off"
                         type="search"
-                        placeholder="Type keywords to search blog posts..."
                         data-testid="search-input"
                         id="search-input"
                         name="search"
+                        placeholder="输入关键词来查找...（即将上线，敬请期待）"
                         onChange={(e) => {
                           setSearchQuery(e.target.value);
                         }}

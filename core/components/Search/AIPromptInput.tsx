@@ -31,7 +31,7 @@ const AIPromptInput = (props: { status: Status }) => {
         autoComplete="off"
         disabled={status === 'loading'}
         type="search"
-        placeholder="Ask me anything about my blog posts, a topic, or my projects..."
+        placeholder="问我有关技术、艺术或商业的任何问题..."
         data-testid="ai-prompt-input"
         id="search-input"
         name="aisearch"

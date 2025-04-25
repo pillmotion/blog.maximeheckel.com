@@ -5,39 +5,39 @@ import Script from 'next/script';
 class MyDocument extends Document {
   render() {
     return (
-      <Html lang="en" className="maximeheckel-light">
+      <Html lang="zh" className="maximeheckel-light">
         <Head>
           <link
-            href="/static/favicons/apple-touch-icon.png"
+            href="/static/favicons/logo-favicon.png"
             rel="apple-touch-icon"
             sizes="180x180"
           />
           <link
-            href="/static/favicons/favicon-196x196.png"
+            href="/static/favicons/logo-favicon.png"
             rel="icon"
             sizes="196x196"
             type="image/png"
           />
           <link
-            href="/static/favicons/favicon-128x128.png"
+            href="/static/favicons/logo-favicon.png"
             rel="icon"
             sizes="128x128"
             type="image/png"
           />
           <link
-            href="/static/favicons/favicon-96x96.png"
+            href="/static/favicons/logo-favicon.png"
             rel="icon"
             sizes="96x96"
             type="image/png"
           />
           <link
-            href="/static/favicons/favicon-32x32.png"
+            href="/static/favicons/logo-favicon.png"
             rel="icon"
             sizes="32x32"
             type="image/png"
           />
           <link
-            href="/static/favicons/favicon-16x16.png"
+            href="/static/favicons/logo-favicon.png"
             rel="icon"
             sizes="16x16"
             type="image/png"

@@ -6,7 +6,6 @@ import { BottomBlurGradientMask } from '@core/components/BottomBlurGradientMask'
 import { Dock } from '@core/components/Dock';
 import Footer from '@core/components/Footer';
 import { Main } from '@core/components/Main';
-import { ArticlesSection } from '@core/features/ArticlesSection';
 import { IndexSection } from '@core/features/IndexSection';
 
 interface Props {
@@ -40,6 +39,7 @@ const Header = () => {
 
 const NewHome = (props: Props) => {
   const { posts } = props;
+  console.log('posts', posts);
 
   return (
     <Main>
@@ -58,7 +58,6 @@ const NewHome = (props: Props) => {
         templateColumns="1fr minmax(auto, 700px) 1fr"
       >
         <IndexSection />
-        <ArticlesSection posts={posts} />
       </Grid>
       <BottomBlurGradientMask />
       <Footer />

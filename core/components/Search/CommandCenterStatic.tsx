@@ -3,7 +3,6 @@ import {
   Flex,
   Icon,
   Text,
-  VisuallyHidden,
 } from '@maximeheckel/design-system';
 import { motion } from 'motion/react';
 import Link from 'next/link';
@@ -111,7 +110,7 @@ const CommandCenterStatic = (props: CommandCenterStaticProps) => {
       }}
     >
       <div aria-hidden={hidden} className={commandCenterStaticWrapper()}>
-        <S.Separator>Tools</S.Separator>
+        <S.Separator>工具</S.Separator>
         <S.Item
           data-testid="aimode"
           data-selected={selectedResult === 'aimode-tools'}
@@ -133,140 +132,20 @@ const CommandCenterStatic = (props: CommandCenterStaticProps) => {
               size="1"
               weight="3"
             >
-              Ask me anything
+              有什么问题就问我
             </Text>
           </Flex>
         </S.Item>
-        <S.Separator>Navigation</S.Separator>
-        <S.Item
-          data-testid="navigation"
-          data-selected={selectedResult === 'home-navigation'}
-          id="home-navigation"
-          key="home-navigation"
-        >
-          <Link href="/" passHref>
-            <Icon.Arrow size={4} />
-            <span style={{ marginLeft: '16px' }}>Home</span>
-          </Link>
-        </S.Item>
+        <S.Separator>导航</S.Separator>
         <S.Item
           data-testid="design"
           data-selected={selectedResult === 'design-navigation'}
           id="design-navigation"
           key="design-navigation"
         >
-          <Link href="/design/" passHref>
+          <Link href="https://web.app.visionlinkmedia.cn/sltv/HB/2025/JSCNAIPlatform/index.html#/" passHref target="_blank">
             <Icon.Arrow size={4} />
-            <span style={{ marginLeft: '16px' }}>Design System</span>
-          </Link>
-        </S.Item>
-        <S.Separator>Links</S.Separator>
-        <S.Item
-          data-testid="bluesky-social-link"
-          data-selected={selectedResult === 'bluesky-social-link'}
-          id="bluesky-social-link"
-          key="bluesky-social-link"
-        >
-          <a
-            href="https://bsky.app/profile/maxime.bsky.social"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Icon.Bluesky />
-            <span style={{ marginLeft: '15px' }}>Bluesky</span>
-            <VisuallyHidden as="p">
-              Link redirects to my Bluesky profile page
-              https://bsky.app/profile/maxime.bsky.social.
-            </VisuallyHidden>
-          </a>
-        </S.Item>
-        <S.Item
-          data-testid="twitter-social-link"
-          data-selected={selectedResult === 'twitter-social-link'}
-          id="twitter-social-link"
-          key="twitter-social-link"
-        >
-          <a
-            href="https://twitter.com/MaximeHeckel"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Icon.Twitter />
-            <span style={{ marginLeft: '15px' }}>Twitter</span>
-            <VisuallyHidden as="p">
-              Link redirects to my Twitter profile page
-              https://twitter.com/MaximeHeckel.
-            </VisuallyHidden>
-          </a>
-        </S.Item>
-        <S.Item
-          data-testid="email-link"
-          data-selected={selectedResult === 'email-link'}
-          id="email-link"
-          key="email-link"
-        >
-          <a
-            href="mailto:hello@maximeheckel.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Icon.Contact />
-            <span style={{ marginLeft: '15px' }}>Contact</span>
-            <VisuallyHidden as="p">
-              Link opens your default mail client with my email address
-              hello@maximeheckel.com prefilled.
-            </VisuallyHidden>
-          </a>
-        </S.Item>
-        <S.Item
-          data-testid="roadmap-link"
-          data-selected={selectedResult === 'roadmap-link'}
-          id="roadmap-link"
-          key="roadmap-link"
-        >
-          <a
-            href="https://www.figma.com/file/uvkUCtxXs7Vvmj58sHh0TE/Maxime's-Public-Roadmap?node-id=0%3A1"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Icon.Map />
-            <span style={{ marginLeft: '15px' }}>Roadmap</span>
-            <VisuallyHidden as="p">
-              Link redirects to a Figjam file where you can see the roadmap with
-              my upcoming projects and ideas.
-            </VisuallyHidden>
-          </a>
-        </S.Item>
-        <S.Item
-          data-testid="maximeheckelcom-link"
-          data-selected={selectedResult === 'maximeheckelcom-link'}
-          id="maximeheckelcom-link"
-          key="maximeheckelcom-link"
-        >
-          <a
-            href="https://maximeheckel.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Icon.Portfolio />
-            <span style={{ marginLeft: '15px' }}>Work</span>
-            <VisuallyHidden as="p">
-              Link redirects to my portfolio https://maximeheckel.com.
-            </VisuallyHidden>
-          </a>
-        </S.Item>
-        <S.Item
-          data-testid="rss-link"
-          data-selected={selectedResult === 'rss-link'}
-          id="rss-link"
-          key="rss-link"
-        >
-          <Link href="/rss.xml" aria-label="RSS Feed" passHref>
-            <Icon.RSS />
-            <span style={{ marginLeft: '15px' }}>RSS</span>
-            <VisuallyHidden as="p">
-              Link redirects to the rss.xml file.
-            </VisuallyHidden>
+            <span style={{ marginLeft: '16px' }}>AI中控台</span>
           </Link>
         </S.Item>
       </div>
