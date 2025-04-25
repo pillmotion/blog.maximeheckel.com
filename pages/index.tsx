@@ -58,7 +58,7 @@ const NewHome = (props: Props) => {
         templateColumns="1fr minmax(auto, 700px) 1fr"
       >
         <IndexSection />
-        {/* <ArticlesSection posts={posts} /> */}
+        <ArticlesSection posts={posts} />
       </Grid>
       <BottomBlurGradientMask />
       <Footer />
