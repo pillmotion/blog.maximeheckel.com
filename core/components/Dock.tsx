@@ -17,9 +17,9 @@ import Logo from './Logo';
 
 enum NAV {
   INDEX = '首页',
-  /* ARTICLES = '资讯', */
-  /* CMD = '命令', */
-  /* ASK = '提问', */
+  ARTICLES = '资讯',
+  CMD = '命令',
+  ASK = '提问',
   AI = 'AI中控台',
 }
 
