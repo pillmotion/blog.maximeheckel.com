@@ -8,7 +8,7 @@ import { motion } from 'motion/react';
 import Link from 'next/link';
 import { useEffect, useState, useCallback } from 'react';
 
-import { Sparkles } from './Icons';
+import { ChartLine, Folder, Plus, Sparkles } from './Icons';
 import * as S from './Search.styles';
 import { MAX_HEIGHT } from './constants';
 import useIndexItem from './useIndexItem';
@@ -110,10 +110,9 @@ const CommandCenterStatic = (props: CommandCenterStaticProps) => {
       }}
     >
       <div aria-hidden={hidden} className={commandCenterStaticWrapper()}>
-        <S.Separator>工具</S.Separator>
+        <S.Separator>项目管理</S.Separator>
         <S.Item
           data-testid="aimode"
-          data-selected={selectedResult === 'aimode-tools'}
           id="aimode-tools"
           key="aimode-tools"
         >
@@ -122,17 +121,66 @@ const CommandCenterStatic = (props: CommandCenterStaticProps) => {
             css={{ cursor: 'pointer' }}
             data-testid="aimode-button"
             onClick={() => {
-              onItemClick('aiMode');
+              onItemClick('');
             }}
+
           >
-            <Sparkles />
+            <Folder />
             <Text
               as="span"
               css={{ margin: '0 8px', textAlign: 'left', flex: 1 }}
               size="1"
               weight="3"
             >
-              有什么问题就问我
+              任务模板库（即将上线，敬请期待）
+            </Text>
+          </Flex>
+        </S.Item>
+        <S.Item
+          data-testid="aimode"
+          id="aimode-tools"
+          key="aimode-tools"
+        >
+          <Flex
+            as="button"
+            css={{ cursor: 'pointer' }}
+            data-testid="aimode-button"
+            onClick={() => {
+              onItemClick('');
+            }}
+          >
+            <Plus />
+            <Text
+              as="span"
+              css={{ margin: '0 8px', textAlign: 'left', flex: 1 }}
+              size="1"
+              weight="3"
+            >
+              任务创建与分配（即将上线，敬请期待）
+            </Text>
+          </Flex>
+        </S.Item>
+        <S.Item
+          data-testid="aimode"
+          id="aimode-tools"
+          key="aimode-tools"
+        >
+          <Flex
+            as="button"
+            css={{ cursor: 'pointer' }}
+            data-testid="aimode-button"
+            onClick={() => {
+              onItemClick('');
+            }}
+          >
+            <ChartLine />
+            <Text
+              as="span"
+              css={{ margin: '0 8px', textAlign: 'left', flex: 1 }}
+              size="1"
+              weight="3"
+            >
+              工作量测算与资源规划（即将上线，敬请期待）
             </Text>
           </Flex>
         </S.Item>

@@ -270,7 +270,7 @@ const Search = (props: Props) => {
                         data-testid="search-input"
                         id="search-input"
                         name="search"
-                        placeholder="输入关键词来查找...（即将上线，敬请期待）"
+                        placeholder="输入关键词来查找任务（即将上线，敬请期待）"
                         onChange={(e) => {
                           setSearchQuery(e.target.value);
                         }}

@@ -16,7 +16,6 @@ import Image from 'next/image';
 enum NAV {
   INDEX = '首页',
   CMD = '命令',
-  ASK = '提问',
   AI = 'AI中控台',
 }
 
@@ -51,9 +50,6 @@ const Dock = () => {
     },
     [NAV.CMD]: () => {
       setIsSearchOpen(true);
-    },
-    [NAV.ASK]: () => {
-      setIsAIModeOpen(true);
     },
     [NAV.AI]: () => {
       window.open('https://web.app.visionlinkmedia.cn/sltv/HB/2025/JSCNAIPlatform/index.html#/', '_blank');
