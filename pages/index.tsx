@@ -38,8 +38,8 @@ const Header = () => {
 };
 
 const NewHome = (props: Props) => {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const { posts } = props;
-  console.log('posts', posts);
 
   return (
     <Main>

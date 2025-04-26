@@ -37,8 +37,8 @@ const FooterBlock = styled('footer', {
 });
 
 const Footer = (props: { lastUpdated?: string }) => {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const { lastUpdated } = props;
-  console.log('lastUpdated', lastUpdated);
 
   const footerRef = useRef<HTMLDivElement>(null);
 

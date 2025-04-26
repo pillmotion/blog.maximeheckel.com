@@ -361,7 +361,7 @@ const Background = () => {
       <group ref={backgroundRef}>
         <mesh rotation={[0, 0, 0]} position={[0, 0, -10]}>
           <planeGeometry args={[300, 300]} />
-          <meshStandardMaterial color="#0F53B7" />
+          <meshStandardMaterial color="#E7283B" />
         </mesh>
         <gridHelper
           args={[50, 120]}
