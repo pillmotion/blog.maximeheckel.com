@@ -128,7 +128,7 @@ const Footer = (props: { lastUpdated?: string }) => {
             justifyContent="center"
             col={2}
           >
-            <Image src="/static/favicons/group.png" alt="Logo" width={0} height={0} sizes="513px" style={{ height: '100%', width: 'auto', maxHeight: '40px' }} />
+            <Image src="/static/favicons/group.png" alt="Logo" width={0} height={0} sizes="513px" style={{ height: '100%', width: 'auto', maxHeight: '40px', maxWidth: '100%' }} />
           </Flex>
         </Grid>
       </FooterBlock>
