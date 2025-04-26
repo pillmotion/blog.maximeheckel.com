@@ -11,7 +11,6 @@ import {
 import { motion, AnimatePresence } from 'motion/react';
 import { MDXRemoteSerializeResult, MDXRemote } from 'next-mdx-remote';
 import { serialize } from 'next-mdx-remote/serialize';
-import Link from 'next/link';
 import { ForwardedRef, forwardRef, useEffect, useRef, useState } from 'react';
 
 import CopyToClipboardButton from '../Buttons/CopyToClipboardButton';
