@@ -8,7 +8,7 @@ import { motion } from 'motion/react';
 import Link from 'next/link';
 import { useEffect, useState, useCallback } from 'react';
 
-import { ChartLine, Folder, Plus, Sparkles } from './Icons';
+import { ChartLine, Folder, Plus } from './Icons';
 import * as S from './Search.styles';
 import { MAX_HEIGHT } from './constants';
 import useIndexItem from './useIndexItem';
