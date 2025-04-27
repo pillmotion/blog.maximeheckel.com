@@ -13,8 +13,6 @@ import React, { useRef } from 'react';
 
 import Image from 'next/image';
 
-import { HR } from '../HR';
-
 const FooterBlock = styled('footer', {
   transition: '0.5s',
   width: '100%',
@@ -97,12 +95,6 @@ const Footer = (props: { lastUpdated?: string }) => {
             justifyContent="space-evenly"
             gap={5}
           >
-            <Grid
-              css={{ width: '100%' }}
-            >
-              <Image src="/static/og/footer-image.jpg" alt="image" width={0} height={0} sizes="(max-width: 768px) 100vw, 712px" style={{ width: '100%', height: 'auto' }} />
-            </Grid>
-            <HR />
             <Grid css={{ width: '100%' }}>
               <Image src="/static/og/footer-fizzdragon.png" alt="fizzdragon" width={0} height={0} sizes="(max-width: 768px) 100vw, 712px" style={{ width: '100%', height: 'auto' }} />
             </Grid>
@@ -128,7 +120,7 @@ const Footer = (props: { lastUpdated?: string }) => {
             justifyContent="center"
             col={2}
           >
-            <Image src="/static/favicons/group.png" alt="Logo" width={0} height={0} sizes="513px" style={{ height: '100%', width: 'auto', maxHeight: '40px', maxWidth: '100%' }} />
+            <Image src="/static/favicons/logo-3.png" alt="Logo" width={0} height={0} sizes="513px" style={{ height: '100%', width: 'auto', maxHeight: '40px', maxWidth: '100%' }} />
           </Flex>
         </Grid>
       </FooterBlock>

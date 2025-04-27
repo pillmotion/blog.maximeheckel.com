@@ -16,7 +16,7 @@ import Image from 'next/image';
 enum NAV {
   INDEX = '首页',
   CMD = '命令',
-  AI = 'AI中控台',
+  AI = '官网',
 }
 
 const Search = dynamic(() => import('@core/components/Search'));
@@ -52,7 +52,7 @@ const Dock = () => {
       setIsSearchOpen(true);
     },
     [NAV.AI]: () => {
-      window.open('https://web.app.visionlinkmedia.cn/sltv/HB/2025/JSCNAIPlatform/index.html#/', '_blank');
+      window.open('https://www.fizzdragon.com/', '_blank');
     },
   };
 
@@ -136,7 +136,7 @@ const Dock = () => {
               marginBottom: 1,
             }}
           >
-            <Image src="/static/favicons/logo-favicon.png" alt="Logo" width={24} height={24} />
+            <Image src="/static/favicons/favicon.ico" alt="Logo" width={24} height={24} />
             <Box
               css={{
                 width: 1,

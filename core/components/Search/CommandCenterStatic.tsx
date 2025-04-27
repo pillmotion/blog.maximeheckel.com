@@ -191,9 +191,9 @@ const CommandCenterStatic = (props: CommandCenterStaticProps) => {
           id="design-navigation"
           key="design-navigation"
         >
-          <Link href="https://web.app.visionlinkmedia.cn/sltv/HB/2025/JSCNAIPlatform/index.html#/" passHref target="_blank">
+          <Link href="https://www.fizzdragon.com/" passHref target="_blank">
             <Icon.Arrow size={4} />
-            <span style={{ marginLeft: '16px' }}>AI中控台</span>
+            <span style={{ marginLeft: '16px' }}>官网</span>
           </Link>
         </S.Item>
       </div>

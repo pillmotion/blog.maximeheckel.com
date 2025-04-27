@@ -8,36 +8,36 @@ class MyDocument extends Document {
       <Html lang="zh" className="maximeheckel-light">
         <Head>
           <link
-            href="/static/favicons/logo-favicon.png"
+            href="/static/favicons/favicon.ico"
             rel="apple-touch-icon"
             sizes="180x180"
           />
           <link
-            href="/static/favicons/logo-favicon.png"
+            href="/static/favicons/favicon.ico"
             rel="icon"
             sizes="196x196"
             type="image/png"
           />
           <link
-            href="/static/favicons/logo-favicon.png"
+            href="/static/favicons/favicon.ico"
             rel="icon"
             sizes="128x128"
             type="image/png"
           />
           <link
-            href="/static/favicons/logo-favicon.png"
+            href="/static/favicons/favicon.ico"
             rel="icon"
             sizes="96x96"
             type="image/png"
           />
           <link
-            href="/static/favicons/logo-favicon.png"
+            href="/static/favicons/favicon.ico"
             rel="icon"
             sizes="32x32"
             type="image/png"
           />
           <link
-            href="/static/favicons/logo-favicon.png"
+            href="/static/favicons/favicon.ico"
             rel="icon"
             sizes="16x16"
             type="image/png"
